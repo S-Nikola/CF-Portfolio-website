@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Nikola</title>
+      <link rel="icon" href="./img/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="./css/styles.production.css">
+      <script src="js/tota11y.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header" id="contact-header">
+        <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list_item navigation-list__item--active">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="contact-h1">Contact</h1>
+        <form action="/login-form-action" method="post" id="contact-form">
+          <div class="input-personal-info">
+            <label class="standard-label" for="first name">Enter personal information</label>
+            <br>
+            <input type="text" id="first-name" name="first name" placeholder="First name*" required>
+            <br>
+            <label for="last name"></label>
+            <input type="text" id="last-name" name="last name" placeholder="Last name*" required>
+          </div>
+          <br>
+          <div class="input-email">
+            <label class="standard-label" for="contact-email">Enter email*</label>
+            <br>
+            <input type="email" id="contact-email" name="email" placeholder="your email" required>
+            <br><br>
+            <label class="standard-label" for="telephone">Telephone</label>
+            <br>
+            <input type="tel" id="telephone" name="telephone" placeholder="your phone number">
+          </div>
+          <br>
+          <div class="message-box">
+            <label class="standard-label"for="message">Send me a message*</label>
+            <br>
+            <textarea name="message" id="message" maxlength="240" cols="25" rows="7" placeholder="..." required></textarea>
+          </div>
+          <br>
+          <button type="submit">Send message</button>
+        </form>
+      </main>
+      <br>
+      <hr>
+      <footer class="contact-footer">
+        <p>Nikola Stefanovski <br>SomewhereStr. No.<br>Halle Saale, Germany</p>
+        <a href="+49 00 0000 0000">+49 00 0000 0000</a>
+        <br>
+        <a href="skype:live:nikola.a.stefanovski">Skype me</a>
+        <br>
+        <a href="mailto:nikoding32@gmail.com">Email me</a>
+        <br>
+        <p>under construction...</p> 
+      </footer>
+    </div>
+  </body>
+</html>
