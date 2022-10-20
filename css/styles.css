@@ -152,9 +152,6 @@ body footer p{
   margin: 30px 0;
   box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
 }
-.input-field {
-  font: 400 14px/18px "Lato", sans-serif;
-}
 fieldset {
   border-color: var(--creme);
   margin: 0 0 10px;
@@ -163,11 +160,16 @@ fieldset {
   width: 100%;
 }
 .input-field {
+  font: 400 14px/18px "Lato", sans-serif;
   width: 90%;
-  border: 1px solid --creme;
-  background: #FFF;
+  border: 1px solid #b69979;
+  background: var(--creme);
+  color: var(--deep-blue);
   margin: 10px;
   padding: 10px;
+}
+::placeholder {
+  color: var(--deep-blue);
 }
 #contact textarea {
   height: 100px;
