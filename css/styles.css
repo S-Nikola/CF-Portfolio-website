@@ -86,9 +86,6 @@ body p, label{
  }
 .grid {
   display: grid;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
@@ -98,7 +95,7 @@ body p, label{
   border-radius: 5%;
   padding: 30px;
   width: auto;
-  /* width: 450px; */
+  height: auto;
   min-height: auto;
   margin: 0;
 }
@@ -113,10 +110,10 @@ body p, label{
   border-radius: 60%;
 } */
 
-/*.grid__item:last-child {
+/* .grid__item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
-}*/
+} */
 
 
 

@@ -111,9 +111,6 @@ body p, label{
 .grid {
   display: -ms-grid;
   display: grid;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -124,7 +121,7 @@ body p, label{
   border-radius: 5%;
   padding: 30px;
   width: auto;
-  /* width: 450px; */
+  height: auto;
   min-height: auto;
   margin: 0;
 }
@@ -139,10 +136,10 @@ body p, label{
   border-radius: 60%;
 } */
 
-/*.grid__item:last-child {
+/* .grid__item:last-child {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
-}*/
+} */
 
 
 
@@ -160,7 +157,7 @@ body p, label{
       -ms-flex-align: center;
           align-items: center;
 }
-form, .contact-footer, .contact-h1{
+form, .contact-footer{
   text-align: center;
 }
 footer img{
@@ -172,21 +169,62 @@ body footer p{
 /*footer stylings end*/
 
 /* Contact site stylings start*/
-.form-container{
+.form-container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
   text-align: center;
 }
-#contact-form {
-  background: #F9F9F9;
-  padding: 25px;
-  margin: 25px 0;
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+#contact {
+  background: #061b2e;
+  padding: 30px;
+  margin: 30px 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+          box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
 }
-
+fieldset {
+  border-color: #b69979;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.input-field {
+  font: 400 14px/18px "Lato", sans-serif;
+  width: 90%;
+  border: 1px solid #b69979;
+  background: #b69979;
+  color: #061b2e;
+  margin: 10px;
+  padding: 10px;
+}
+::-webkit-input-placeholder {
+  color: #061b2e;
+}
+::-moz-placeholder {
+  color: #061b2e;
+}
+:-ms-input-placeholder {
+  color: #061b2e;
+}
+::-ms-input-placeholder {
+  color: #061b2e;
+}
+::placeholder {
+  color: #061b2e;
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#contact-button {
+  width: 90%;
+  margin: 15px;
+  font-size: 15px;
+  color: white;
+}
 /* Contact site stylings end*/
 
 /* stylings of links and buttons start*/
@@ -239,7 +277,7 @@ a:hover, a:focus, .a:hover, .a:focus {
   display: inline-block;
   font-family: inherit;
   background-color: #007eb4;
-  color: white;
+  color: #f7f7f7;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -253,7 +291,7 @@ button {
   display: inline-block;
   font-family: inherit;
   background-color: #007eb4;
-  color: white;
+  color: #f7f7f7;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
