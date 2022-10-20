@@ -120,14 +120,14 @@ body p, label{
 
 
 
-  /* Footer stylings below*/
+  /* Footer stylings start*/
 .page-footer{
   clear: both;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-form, .contact-footer, .contact-h1{
+form, .contact-footer{
   text-align: center;
 }
 footer img{
@@ -136,7 +136,50 @@ footer img{
 body footer p{
   font-size: 15px;
 }
-/*footer stylings above*/
+/*footer stylings end*/
+
+/* Contact site stylings start*/
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#contact {
+  background: var(--deep-blue);
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+}
+.input-field {
+  font: 400 14px/18px "Lato", sans-serif;
+}
+fieldset {
+  border-color: var(--creme);
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.input-field {
+  width: 90%;
+  border: 1px solid --creme;
+  background: #FFF;
+  margin: 10px;
+  padding: 10px;
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#contact-button {
+  width: 90%;
+  margin: 15px;
+  font-size: 15px;
+}
+/* Contact site stylings end*/
 
 /* stylings of links and buttons start*/
 a{
@@ -178,7 +221,7 @@ a:hover, a:focus, .a:hover, .a:focus {
   display: inline-block;
   font-family: inherit;
   background-color: var(--blue);
-  color: white;
+  color: var(--silver);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
