@@ -39,6 +39,7 @@ h1 {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+
 }
 .about-div{
   display: flex;
@@ -53,6 +54,7 @@ body p, label{
 /* Header stylings start*/
 .page-header {
   display: flex;
+  align-items: center;
   width: 100%;
   padding: 20px;
   position:sticky;
@@ -65,6 +67,7 @@ body p, label{
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
+  align-self: flex-start;
 }
 .navigation-list {
   list-style-type: none;
@@ -72,6 +75,10 @@ body p, label{
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+.navigation-list__item--active {
+  color: var(--silver);
+  font-weight: bolder;
 }
 #nikola_logo{
   width: 10%;
@@ -90,14 +97,15 @@ body p, label{
   grid-gap: 20px;
 }
 .grid__item {
-  background-color: #b69979;
-  color: #01182c;
-  border-radius: 5%;
+  background-color: var(--deep-blue);
+  color: var(--creme);
+  border-radius: 30px;
   padding: 30px;
   width: auto;
   height: auto;
   min-height: auto;
   margin: 0;
+  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
 }
 /* General grid stylings end*/
 
@@ -141,29 +149,38 @@ body footer p{
   width: 100%;
   margin: 0 auto;
   position: relative;
-  text-align: center;
 }
+
 #contact {
   background: var(--deep-blue);
   padding: 30px;
   margin: 30px 0;
   box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+  border-radius: 10px;
 }
 fieldset {
   border-color: var(--creme);
+  border-radius: 10px;
   margin: 0 0 10px;
   min-width: 100%;
   padding: 0;
   width: 100%;
 }
+#contact-heading {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
 .input-field {
-  font: 400 14px/18px "Lato", sans-serif;
+  font: 400 13px/15px "Lato", sans-serif;
   width: 90%;
   border: 1px solid #b69979;
   background: var(--creme);
   color: var(--deep-blue);
   margin: 10px;
   padding: 10px;
+  border-radius: 3px;
+
 }
 ::placeholder {
   color: var(--deep-blue);
@@ -179,6 +196,13 @@ fieldset {
   font-size: 15px;
   color: white;
 }
+.standard-label{
+  display: flex;
+  margin-left: 18px;
+  align-items: flex-start;
+  font-size: medium;
+  color: var(--silver);
+}
 /* Contact site stylings end*/
 
 /* stylings of links and buttons start*/
@@ -186,19 +210,24 @@ a{
   color: var(--creme);
   text-decoration: none;
   }
-a:visited{
+/* a:visited{
   color: var(--blue);
-  }
+  } */
+#look-work{
+  color: var(--silver);
+  font-weight: bold;
+}
 a:hover, a:focus {
   text-decoration: none;
   color: var(--silver);
   background-color: var(--blue);
+  border-radius: 5px;
   transition: 0.2s opacity;
 }
-a:active{
+/* a:active{
   text-decoration: underline;
   color: var(--creme);
-}
+} */
 a:hover, a:focus, .a:hover, .a:focus {
   cursor: pointer;
   opacity: 0.8;
@@ -206,22 +235,19 @@ a:hover, a:focus, .a:hover, .a:focus {
 #work-heading{
   text-align: center;
 }
-#look-work{
-  color: var(--silver);
-  font-weight: bold;
-}
+
 #download-cv{
   margin-bottom: 10px;
 }
 #download-cv:visited{
-  color: var(--silver);
+  color: white;
 }
 .button, button {
   border: none;
   display: inline-block;
   font-family: inherit;
   background-color: var(--blue);
-  color: var(--silver);
+  color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -259,15 +285,18 @@ footer div a:visited{
   top: -4px;
 }
 .grid a{
-  background-color: var(--deep-blue);
-  color: var(--silver);
+  background-color: var(--creme);
+  border-radius: 3px;
+  color: var(--deep-blue);
 }
 .grid a:visited{
   background-color: var(--silver);
+  border-radius: 3px;
   color: var(--deep-blue);
 }
 .grid a:hover, a:focus{
-  background-color: #598699;
+  background-color: var(--blue);
+  color: white;
   text-decoration: underline;
 }
 /*color specifics end*/
@@ -298,6 +327,7 @@ footer div a:visited{
 @media all and (max-width: 500px) {
   .profile {
    flex-wrap: wrap;
+   justify-content: center;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
