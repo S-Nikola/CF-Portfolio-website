@@ -290,12 +290,12 @@ footer div a:visited{
 }
 .grid a{
   background-color: var(--creme);
-  border-radius: 3px;
+  border-radius: 5px;
   color: var(--deep-blue);
 }
 .grid a:visited{
   background-color: var(--silver);
-  border-radius: 3px;
+  border-radius: 5px;
   color: var(--deep-blue);
 }
 .grid a:hover, a:focus{

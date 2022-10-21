@@ -375,12 +375,12 @@ footer div a:visited{
 }
 .grid a{
   background-color: #b69979;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #061b2e;
 }
 .grid a:visited{
   background-color: #f7f7f7;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #061b2e;
 }
 .grid a:hover{
