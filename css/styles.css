@@ -12,7 +12,7 @@
 body{
   background-color: var(--deep-blue);
   color: var(--creme);
-  font-family: 'Lato', sans-serif; 
+  font-family: 'Lora', sans-serif; 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -292,6 +292,7 @@ footer div a:visited{
   background-color: var(--creme);
   border-radius: 5px;
   color: var(--deep-blue);
+  font-weight: bold;
 }
 .grid a:visited{
   background-color: var(--silver);
