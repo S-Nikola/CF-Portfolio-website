@@ -182,9 +182,9 @@ fieldset {
   background: var(--creme);
   color: var(--deep-blue);
   margin: 10px;
+  margin-top: 0;
   padding: 10px;
   border-radius: 3px;
-
 }
 ::placeholder {
   color: var(--deep-blue);
