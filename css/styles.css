@@ -30,7 +30,7 @@ h1 {
 }
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 100px auto;
   margin-bottom: 70px;
   display: flex;
 }
@@ -39,7 +39,6 @@ h1 {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-
 }
 .about-div{
   display: flex;
@@ -134,7 +133,15 @@ body p, label{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
 }
+/* #main-page_footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  } */
 form, .contact-footer{
   text-align: center;
 }
@@ -207,6 +214,22 @@ fieldset {
   font-size: medium;
   color: var(--silver);
 }
+.contact-info{
+  display: inline-block;
+  position: absolute;
+  background-color: var(--deep-blue);
+  color: var(--creme);
+  border-radius: 15px;
+  padding: 30px;
+  width: auto;
+  height: auto;
+  min-height: auto;
+  margin: 0;
+  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+}
+.contact-info p {
+  margin-top: 0;
+}
 /* Contact site stylings end*/
 
 /* stylings of links and buttons start*/
@@ -225,6 +248,7 @@ a:hover, a:focus {
   text-decoration: none;
   color: var(--silver);
   background-color: var(--blue);
+  padding: 4px;
   border-radius: 5px;
   transition: 0.2s opacity;
 }
@@ -278,6 +302,7 @@ I would like it to become red only when a false email pattern is inputed*/
 /*color specifics start*/
 footer div a:hover, a:focus {
   text-decoration: none;
+  padding: 0;
   background-color: var(--deep-blue);
 }
 footer div a:visited{
@@ -291,6 +316,7 @@ footer div a:visited{
 .grid a{
   background-color: var(--creme);
   border-radius: 5px;
+  padding: 4px;
   color: var(--deep-blue);
   font-weight: bold;
 }
@@ -333,11 +359,23 @@ footer div a:visited{
   .profile {
    flex-wrap: wrap;
    justify-content: center;
+   margin-top: 0;
+   margin-bottom: 0;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   #nikola_logo{
     width: 1em;
+  }
+}
+@media all and (max-width: 1000px) {
+  .contact-info {
+   position: relative;
+   max-width: 400px;
+   text-align: center;
+   max-width: 400px;
+   width: 100%;
+   margin: 0 auto;
   }
 }
 @keyframes color-change {
