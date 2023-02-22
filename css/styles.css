@@ -261,10 +261,6 @@ a:hover, a:focus, .a:hover, .a:focus {
   opacity: 0.8;
 }
 
-.grid-button{
-  display: inline-block;
-  margin-top: 5px
-}
 #work-heading{
   text-align: center;
 }
@@ -324,6 +320,8 @@ footer div a:visited{
   padding: 4px;
   color: var(--deep-blue);
   font-weight: bold;
+  display: inline-block;
+  margin-top: 5px
 }
 .grid a:visited{
   background-color: var(--silver);
