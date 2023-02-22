@@ -381,14 +381,12 @@ footer div a:visited{
   color: #061b2e;
   font-weight: bold;
   display: inline-block;
-  margin-top: 5px
 }
 .grid__item a {
   position: absolute;
   bottom: 41px;
   left: 28px;
 }
-
 .grid__item a:last-of-type {
   bottom: 6px; /* add a small gap between the two elements */
 }
