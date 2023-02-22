@@ -260,6 +260,11 @@ a:hover, a:focus, .a:hover, .a:focus {
   cursor: pointer;
   opacity: 0.8;
 }
+
+.grid-button{
+  display: inline-block;
+  margin-top: 5px
+}
 #work-heading{
   text-align: center;
 }
