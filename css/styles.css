@@ -336,7 +336,7 @@ footer div a:visited{
   left: 28px;
 }
 .grid__item_img {
-  width: 90%;
+  width: 100%;
   border: 2px solid #b69979;
   box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
 
