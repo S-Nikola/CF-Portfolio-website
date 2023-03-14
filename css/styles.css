@@ -496,8 +496,7 @@ footer div a:visited{
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  margin-right: 200px;
-  display: block;
+  margin-right: 20px;
 }
 .client-content{
   text-align: justify;
@@ -563,6 +562,9 @@ footer div a:visited{
     display: grid;
     grid-template-columns: 1fr;
   }
+  .differences h2 {
+    text-align: center;
+  }
   .views-img-wrap {
     display: grid;
     grid-template-columns: 1fr;
@@ -601,4 +603,10 @@ footer div a:visited{
   background-color: var(--blue);
   color: white;
   text-decoration: underline;
+}
+@media all and (max-width: 500px) {
+  .project-links {
+   flex-wrap: wrap;
+   justify-content: center;
+  }
 }
