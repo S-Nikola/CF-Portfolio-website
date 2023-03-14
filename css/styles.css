@@ -460,7 +460,7 @@ footer div a:visited{
 
 /*Case study stylings*/
 
-.case-intro, .client-side{
+.case-intro {
   display: flex;
 }
 
@@ -494,10 +494,14 @@ footer div a:visited{
 
 .client-side{
   display: flex;
-  flex-direction: row-reverse
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-right: 200px;
+  display: block;
 }
 .client-content{
   text-align: justify;
+  margin-right: 20px;
 }
 .client-content h2 {
   text-align: end;
@@ -514,6 +518,11 @@ footer div a:visited{
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+  .client-content{
+    text-align: justify;
+    margin-right: 20px;
   }
   .welcome-img-wrap {
     width: 100%;
@@ -571,6 +580,7 @@ footer div a:visited{
 .project-links{
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 .project-links a{
   background-color: var(--creme);
