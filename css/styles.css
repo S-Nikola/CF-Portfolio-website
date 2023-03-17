@@ -496,9 +496,13 @@ h1{
   display: block;
 }
 
+h4{
+  margin-bottom: 0;
+}
+
 .case-img-wrap img, 
 .welcome-img-wrap img, 
-.views-img-wrap img
+.views-img-wrap img,
 .server-img-wrap img{
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(168, 165, 199, 0.2), 0 5px 10px 0px rgba(238, 203, 150, 0.24);
@@ -507,10 +511,13 @@ figure{
   text-align: center;
 }
 
-@media all and (max-width: 1439px) {
+@media all and (max-width: 1600px) {
   .case-intro {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .case-img-wrap{
+    display: flex;
   }
   .case-img{
     width: 100%;
@@ -523,6 +530,12 @@ figure{
     text-align: center;
   }
 }
+@media all and (max-width: 1300px) {
+  .case-img-wrap{
+  display: block;
+  }
+}
+
 .server-side{
   display: flex;
   flex-direction: row-reverse;
@@ -663,7 +676,7 @@ figure{
   color: white;
   text-decoration: underline;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 900px) {
   .project-links {
    flex-wrap: wrap;
    justify-content: center;
