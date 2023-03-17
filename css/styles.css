@@ -424,13 +424,7 @@ footer div a:visited{
     fill: #f76414;
   }
 }
-/* LONG VERSION .sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-} */
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -460,13 +454,40 @@ footer div a:visited{
 
 /*Case study stylings*/
 
+.case-study{
+  margin: 0 200px 0;
+}
+h1, h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+h1{
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+@media all and (max-width: 1100px) {
+  .case-study{
+    margin: 0 100px 0;
+  }
+}
+@media all and (max-width: 700px) {
+  .case-study{
+    margin: 0 50px 0;
+  }
+}
+@media all and (max-width: 400px) {
+  .case-study{
+    margin: 0 20px 0;
+  }
+}
+
 .case-intro {
   display: flex;
 }
 
 .case-img{
   width: 500px;
-  margin-top: 20px;
+
 }
 
 .case-intro-content{
@@ -475,7 +496,18 @@ footer div a:visited{
   display: block;
 }
 
-@media all and (max-width: 1200px) {
+.case-img-wrap img, 
+.welcome-img-wrap img, 
+.views-img-wrap img
+.server-img-wrap img{
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(168, 165, 199, 0.2), 0 5px 10px 0px rgba(238, 203, 150, 0.24);
+}
+figure{
+  text-align: center;
+}
+
+@media all and (max-width: 1439px) {
   .case-intro {
     display: grid;
     grid-template-columns: 1fr;
@@ -491,10 +523,34 @@ footer div a:visited{
     text-align: center;
   }
 }
+.server-side{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.server-side-content{
+  width: 100%;
+  margin-left: 20px;
+  display: block;
+}
+.server-img-wrap img{
+  margin-top: 20px;
+  width: 90%;
+}
+
+@media all and (max-width: 1439px) {
+  .server-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+  }
+  .server-img-wrap img{
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .client-side{
   display: flex;
-  flex-direction: row-reverse;
   width: 100%;
   margin-right: 20px;
 }
@@ -507,17 +563,20 @@ footer div a:visited{
 }
 .welcome-img-wrap{
   display: flex;
+  margin-top: 10px;
 }
 .welcome-img {
   width: 250px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1439px) {
   .client-side {
-    text-align: left;
     display: grid;
     grid-template-columns: 1fr;
     margin-right: 20px;
+  }
+  .client-side h2{
+    text-align: right;
   }
   .client-content{
     text-align: justify;
@@ -542,16 +601,16 @@ footer div a:visited{
 }
 #phone-views {
   display: flex;
-  
 }
 .view-img{
   width: 100%;
 }
+
 .views-img-wrap{
   display: flex;
 }
-#ProfileView {
-  width: 100%;
+#profile-view {
+  width: 80%;
 }
 #MovieView {
   height: 70%;

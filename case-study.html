@@ -34,37 +34,28 @@
       </nav>
     </header>
     <main class="page-main">
-        <div class="case-study" id="case-start">
-          <h1>Case Study for <span class="myflix-style">BananaFlix</span> full-stack project</h1>
+      <div class="case-study" id="case-start">
+          <h1>Case Study for BananaFlix full-stack project</h1>
           <div class="case-intro">
             <div class="case-intro-content">
-              <h2>Overview</h2>
+              <h3>Overview</h3>
               <p>
                 BananaFlix is the client side of a movie browsing app that allows users to register,
                 log in and browse through movies. They can add movies to their list of favorites 
                 and they can view them and their profile details in the ProfileView, where they can also edit user details. 
               </p>
-              <h2>Purpose & Context</h2>
+              <br>
+              <h3>Purpose & Context</h3>
               <p>
                 BananaFlix was a project I built as part of my web development course at CareerFoundry.
                 It was intended as a place to practice newly acquired knowledge of JavaScript and TypeScript as well 
                 frameworks such as React and Angular. In addition, it served as an introduction to backend development.
               </p>
-              <h2>Objective</h2>
+              <br>
+              <h3>Objective</h3>
               <p>
                 It is part of a larger full-stack project and one of two clients 
                 (one built with React and one with Angular) using the same backend.
-              </p>
-            <h2>Server-Side</h2>
-              <p>
-                I created a REST API using Node.js and Express, that interacts with a non-relational database (MongoDB). 
-                The API can be accessed via HTTP methods like GET or POST. CRUD methods are used in order to retrieve data from, 
-                and store data in the database. Further information about the endpoints can be found in the documentation of the API.
-                The API provides information about movies in JSON format. It also stores registered users.
-              </p>
-              <p>
-                Postman was used to test the API. User authentication and an authorization code in the form of basic 
-                HTTP authentication and JWT authentication, is also included.
               </p>
             </div>
             <div class="case-img-wrap">
@@ -78,9 +69,27 @@
               </figure>
             </div>
           </div>
+          <h2>--- Server-Side ---</h2>
+          <div class="server-side">
+            <div class="server-side-content">
+              <p>
+                I created a REST API using Node.js and Express, that interacts with a non-relational database (MongoDB). 
+                The API can be accessed via HTTP methods like GET or POST. CRUD methods are used in order to retrieve data from, 
+                and store data in the database. Further information about the endpoints can be found in the documentation of the API.
+                The API provides information about movies in JSON format. It also stores registered users.
+              </p>
+              <p>
+                Postman was used to test the API. User authentication and an authorization code in the form of basic 
+                HTTP authentication and JWT authentication, is also included.
+              </p>
+            </div>
+            <div class="server-img-wrap">
+              <img src="./img/BFlix_case/postman_get_movies.jpg" alt="screenshot of a postman test">
+            </div>
+          </div>
+          <h2>--- Client-Side ---</h2>
           <div class="client-side">
             <div class="client-content">
-              <h2>Client-Side</h2>
               <p>
                 I built two client-side versions that interact with, and receive responses from, the server-side. 
                 One is a single-page, responsive application, developed with React, that provides several interface views:
@@ -100,17 +109,17 @@
             </div>
             <div class="welcome-img-wrap">
               <figure>
-                <img class="welcome-img" src="./img/BFlix_case/react_login.jpg" alt="screenshot of movie list" />
+                <img class="welcome-img" src="./img/BFlix_case/react_login.jpg" alt="screenshot of the login view" />
                 <figcaption>React LoginView</figcaption>
               </figure>
               <figure>
-                <img class="welcome-img" src="./img/BFlix_case/react_register.jpg" alt="screenshot of movie list" />
+                <img class="welcome-img" src="./img/BFlix_case/react_register.jpg" alt="screenshot of signup view" />
                 <figcaption>React SignupView</figcaption>
               </figure>
             </div>
           </div>
+          <h2>--- Additional differences between clients ---</h2>
           <div class="differences">
-            <h2>--- Additional differences between clients ---</h2>
             <p>
               While both clients provide the user with the option to edit their information and login credentials, 
               there is one difference between the two clients. The React client is accompanied by advanced form authentication 
@@ -120,7 +129,6 @@
               the framework, learn the basics of TypeScript and employ more advanced forms of documentation.
               Therefore, the Angular client has both a simpler look and a somewhat reduced functionality. 
             </p>
-          
           <div class="views-img-wrap">
             <div id="phone-views">
               <figure>
@@ -132,13 +140,15 @@
                 <figcaption>Angular main view on a small screen</figcaption>
               </figure>
             </div>
-            <figure>
-              <img class="view-img" id="ProfileView" src="./img/BFlix_case/react-profile-laptop.jpg" alt="screenshot of movie list" />
+            <div>
+              <figure>
+              <img class="view-img" id="profile-view" src="./img/BFlix_case/react-profile-laptop.jpg" alt="screenshot of movie list" />
               <figcaption>React ProfileView on a large screen</figcaption>
             </figure>
+            </div>
           </div>
-        </div>
-            <h2>Challenges</h2>
+          </div>
+            <h2 id="challenges" >--- Challenges ---</h2>
             <p>
               This as my first full-stack project and it provided me with ample experiences when dealing with problems during development.
               And there were many problems. For starters, managing the states without using Redux or Context API in the React client was very dificult.
@@ -150,21 +160,22 @@
               This project also increased my knowledge of the use of the terminal, as well as version control, which was very neccessary,
               due to many setbacks and experimentations.
             </p>
-          </div>
-            <h2>Credits</h2>
+      
+            <h3>Credits</h3>
             <ul>
               <li>My Role: Lead Developer</li>
               <li>Tutor: Ayeah Godlove Akoni</li>
               <li>Mentor: Ramadhan Aheebwa</li>
             </ul>
-          </div>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/S-Nikola/BananaFlix-client" target="_blank">Code for the React client</a>
-          <a href="https://github.com/S-Nikola/BananaFlix-Angular-client" target="_blank">Code for the Angular client</a>
-          <a href="https://banana-flix.netlify.app/login" target="_blank">Demo for the React client</a>
-          <a href="https://s-nikola.github.io/BananaFlix-Angular-client/welcome" target="_blank">Demo for the Angular client</a>
-        </div>
+            <div class="project-links">
+              <a href="https://github.com/S-Nikola/BananaFlix-client" target="_blank">Code for the React client</a>
+              <a href="https://github.com/S-Nikola/BananaFlix-Angular-client" target="_blank">Code for the Angular client</a>
+              <a href="https://banana-flix.netlify.app/login" target="_blank">Demo for the React client</a>
+              <a href="https://s-nikola.github.io/BananaFlix-Angular-client/welcome" target="_blank">Demo for the Angular client</a>
+            </div>
+      </div>
+  </div>
+        
     </main>  
     <footer class="page-footer">
       <p>Find me on</p>
@@ -179,6 +190,7 @@
           <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
       </div>
+  </div>
       <p>under construction...</p> 
     </footer>
   </div>
