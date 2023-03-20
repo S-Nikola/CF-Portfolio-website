@@ -88,17 +88,16 @@ body p, label{
 }
 /* header styling end */
 
-/* General grid stylings start */
-.grid__item {
-  display: inline-block;
-  width: 33%;
- }
-.grid {
+/* General project_grid stylings start */
+
+.project_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-.grid__item {
+.project {
+  display: inline-block;
+  width: 33%;
   background-color: var(--deep-blue);
   color: var(--creme);
   border-radius: 30px;
@@ -110,23 +109,59 @@ body p, label{
   box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
   position: relative;
 }
-/* General grid stylings end*/
 
+.project{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project_title{
+  font-size: 2.5vmin;
+}
+.project_description{
+  height: 30%;
+  font-size: 1.6vmin;
+}
 
-/* // I will not use these for the time being */
-/* body div span{
-  background-color: --deep-blue;
-  color: #b9b1a9;
-  padding: 4px;
-  border-radius: 60%;
-} */
+.project-buttons {
+  display: flex;
+  justify-self: end;
+}
 
-/* .grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
-} */
+.project-buttons a{
+  background-color: var(--creme);
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: var(--deep-blue);
+  font-weight: bold;
+  font-size: 1.6vmin;
+  display: inline-block;
+  margin: 5px;
+}
 
+.project_img {
+  width: 100%;
+  border: 2px solid #b69979;
+  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+}
 
+.project a:last-of-type {
+  bottom: 6px; /* add a small gap between the two elements */
+}
+.project_grid a:visited{
+  background-color: var(--silver);
+  border-radius: 5px;
+  color: var(--deep-blue);
+}
+.project_grid a:hover, a:focus{
+  background-color: var(--blue);
+  color: white;
+  text-decoration: underline;
+}
+
+/* General project_grid stylings end*/
 
   /* Footer stylings start*/
 .page-footer{
@@ -134,15 +169,10 @@ body p, label{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: absolute; */
   width: 100%;
   bottom: 0;
 }
-/* #main-page_footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  } */
+
 form, .contact-footer{
   text-align: center;
 }
@@ -249,7 +279,6 @@ a:hover, a:focus {
   text-decoration: none;
   color: var(--silver);
   background-color: var(--blue);
-  padding: 4px;
   border-radius: 5px;
   transition: 0.2s opacity;
 }
@@ -267,12 +296,21 @@ a:hover, a:focus, .a:hover, .a:focus {
 }
 
 #download-cv{
-  margin-bottom: 10px;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
 }
 #download-cv:visited{
   color: white;
 }
-.button, button {
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -284,7 +322,7 @@ a:hover, a:focus, .a:hover, .a:focus {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
   }
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus {
   cursor: pointer;
   opacity: 0.8;
   }
@@ -316,65 +354,24 @@ footer div a:visited{
   top: -4px;
 }
 
-.grid__item{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.project-buttons {
-  display: flex;
-}
-
-.project-buttons a{
-  background-color: var(--creme);
-  border-radius: 5px;
-  padding: 2px 10px;
-  color: var(--deep-blue);
-  font-weight: bold;
-  display: inline-block;
-  margin: 5px;
-}
-
-.grid__item_img {
-  width: 100%;
-  border: 2px solid #b69979;
-  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
-}
-
-.grid__item a:last-of-type {
-  bottom: 6px; /* add a small gap between the two elements */
-}
-.grid a:visited{
-  background-color: var(--silver);
-  border-radius: 5px;
-  color: var(--deep-blue);
-}
-.grid a:hover, a:focus{
-  background-color: var(--blue);
-  color: white;
-  text-decoration: underline;
-}
 /*color specifics end*/
 
 /*MEDIA QUERIES start*/
 @media all and (max-width: 700px) {
-  .grid {
+  .project_grid {
     grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 700px) and (max-width: 1100px){
-  .grid {
+  .project_grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media all and (max-width: 750px) {
-  .grid {
+  .project_grid {
     grid-gap: 10px;
   }
-  .grid__item:last-child {
+  .project:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
@@ -457,11 +454,12 @@ footer div a:visited{
 .case-study{
   margin: 0 200px 0;
 }
-h1, h2 {
+.case-study h1, .case-study h2 {
   text-align: center;
   margin-top: 50px;
 }
-h1{
+
+.case-study h1{
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -496,9 +494,13 @@ h1{
   display: block;
 }
 
+h4{
+  margin-bottom: 0;
+}
+
 .case-img-wrap img, 
 .welcome-img-wrap img, 
-.views-img-wrap img
+.views-img-wrap img,
 .server-img-wrap img{
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(168, 165, 199, 0.2), 0 5px 10px 0px rgba(238, 203, 150, 0.24);
@@ -507,10 +509,13 @@ figure{
   text-align: center;
 }
 
-@media all and (max-width: 1439px) {
+@media all and (max-width: 1600px) {
   .case-intro {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .case-img-wrap{
+    display: flex;
   }
   .case-img{
     width: 100%;
@@ -523,6 +528,12 @@ figure{
     text-align: center;
   }
 }
+@media all and (max-width: 1300px) {
+  .case-img-wrap{
+  display: block;
+  }
+}
+
 .server-side{
   display: flex;
   flex-direction: row-reverse;
@@ -663,7 +674,7 @@ figure{
   color: white;
   text-decoration: underline;
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 900px) {
   .project-links {
    flex-wrap: wrap;
    justify-content: center;
