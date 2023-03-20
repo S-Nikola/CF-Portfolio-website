@@ -169,15 +169,10 @@ body p, label{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: absolute; */
   width: 100%;
   bottom: 0;
 }
-/* #main-page_footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  } */
+
 form, .contact-footer{
   text-align: center;
 }
@@ -284,7 +279,6 @@ a:hover, a:focus {
   text-decoration: none;
   color: var(--silver);
   background-color: var(--blue);
-  padding: 4px;
   border-radius: 5px;
   transition: 0.2s opacity;
 }
@@ -302,12 +296,21 @@ a:hover, a:focus, .a:hover, .a:focus {
 }
 
 #download-cv{
-  margin-bottom: 10px;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
 }
 #download-cv:visited{
   color: white;
 }
-.button, button {
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -319,7 +322,7 @@ a:hover, a:focus, .a:hover, .a:focus {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
   }
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus {
   cursor: pointer;
   opacity: 0.8;
   }
