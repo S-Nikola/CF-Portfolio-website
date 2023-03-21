@@ -276,6 +276,13 @@ a:hover, a:focus, .a:hover, .a:focus {
   margin-right: 20px;
   width: 50%;
 }
+#additional-skills{
+  padding-left: 10px;
+  width: 80%;
+}
+#additional-skills p{
+  margin-bottom: 0;
+}
  /* @media all and (max-width: 1300px) {
   #skills {
     flex-direction: column;
