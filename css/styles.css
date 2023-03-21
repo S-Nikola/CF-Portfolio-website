@@ -17,22 +17,28 @@ body{
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
+  height: 100%;
 }
 h1 {
   font-size: 30px;
   font-weight: 700;
 }
+
 .page-main{
   margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
+
+
 .profile {
   max-width: 700px;
   margin: 100px auto;
   margin-bottom: 70px;
   display: flex;
+  height: 100%;
 }
 .profile-portrait{
   /* float: left; */
@@ -375,7 +381,7 @@ footer div a:visited{
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 {
+  .project_grid h1 {
     font-size: 22px;
   }
 }
@@ -524,7 +530,7 @@ figure{
   .case-intro h2 {
     text-align: center;
   }
-  h1 {
+  .case-intro h1 {
     text-align: center;
   }
 }

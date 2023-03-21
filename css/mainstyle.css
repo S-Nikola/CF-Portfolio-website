@@ -1,0 +1,284 @@
+:root {
+  --deep-blue: #061b2e;
+  --creme: #b69979;
+  --blue: #007eb4;
+  --silver: #f7f7f7;
+}
+*{
+  box-sizing: border-box;
+}
+/*General styling begins*/
+body{
+  background-color: var(--deep-blue);
+  color: var(--creme);
+  font-family: 'Lora', sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  height: 100%;
+}
+body p, label{
+  font-size: 20px;
+}
+/* .container{
+ padding: 40px;
+} */
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+a {
+  color: var(--creme);
+  text-decoration: none;
+  }
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--silver);
+  background-color: var(--blue);
+  border-radius: 5px;
+  transition: 0.2s opacity;
+}
+/* a:active{
+  text-decoration: underline;
+  color: var(--creme);
+} */
+a:hover, a:focus, .a:hover, .a:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*General styling ends*/
+
+/* Header stylings start*/
+.page-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position:sticky;
+  top: 1px;
+  background-color: var(--deep-blue);
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  align-self: flex-start;
+}
+.navigation-list {
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+/* .navigation-list__item--active {
+  color: var(--silver);
+  font-weight: bolder;
+} */
+#nikola_logo{
+  width: 10%;
+  height: 10%;
+}
+/* header styling end */
+
+/*Profile page styling begins*/
+.profile-page{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 75vh;
+  overflow: auto;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 100px auto;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.profile-portrait{
+  /* float: left; */
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+@media all and (max-width: 500px) {
+  .profile {
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 50px 50px 10px;
+   text-align: center;
+  }
+  .profile-portrait{
+    margin: 0;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  #nikola_logo{
+    width: 1em;
+  }
+}
+  .page-footer{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .page-footer img{
+      width: 40px;
+  }
+  .page-footer p{
+    font-size: 15px;
+  }
+  .page-footer div a:hover, a:focus {
+    text-decoration: none;
+    padding: 0;
+    background-color: var(--deep-blue);
+  }
+  .page-footer div a:visited{
+    text-decoration: none;
+    background-color: var(--deep-blue);
+  }
+  .social-media_icon:hover{
+    position: relative;
+    top: -4px;
+  }
+/*Profile page styling ends*/
+
+/*About page styling begins*/
+.about-page{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  padding-top: 170px;
+}
+.about-page h1{
+  text-align: center;
+  margin: 0;
+}
+.about-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto; */
+}
+.about-paragraph{
+  margin: 50px 300px 20px;
+}
+#previous-exp{
+  margin-top: 10px;
+}
+@media all and (max-width: 1300px) {
+  .about-paragraph {
+    margin: 50px 200px 10px;
+  }
+}
+@media all and (max-width: 800px) {
+  .about-paragraph {
+    margin: 50px 100px 10px;
+  }
+}
+@media all and (max-width: 550px) {
+  .about-paragraph {
+    margin: 50px 50px 10px;
+  }
+}
+#download-cv{
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+#download-cv:visited{
+  color: white;
+}
+#skills{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  padding: 50px 200px 50px;
+}
+#front-back{
+  display: flex;
+}
+.skills-list{
+  margin-right: 20px;
+  width: 50%;
+}
+@media all and (max-width: 850px) {
+  #skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px 10px;
+  }
+  #additional-skills{
+    width:70%;
+    margin: 0;
+  }
+}
+@media all and (max-width: 500px) {
+  #skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 10px;
+  }
+  #additional-skills{
+    width:70%;
+    margin: 0;
+  }
+}
+
+/*About page styling begins*/
+
+/*Work page styling begins*/
+/*Work page styling ends*/
+
+/*Contact page styling begins*/
+/*Contact page styling ends*/
+
+/* begins*/
+/* ends*/
+
+/* begins*/
+/* ends*/
+
+/* begins*/
+/* ends*/
+
+/* begins*/
+/* ends*/
+
+
+
