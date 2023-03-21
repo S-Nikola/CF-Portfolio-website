@@ -10,57 +10,244 @@
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="./css/styles.css">
-     <!-- <script src="js/tota11y.min.js"></script> -->
 </head>
 <body>
-  <div class="container">
-    <header class="page-header">
-      <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation" >
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <div class="profile">
+  <header class="page-header">
+    <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="#" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation" >
+          <a href="#about-page" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="#work-page" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="profile-page">
+      <div class="profile" >
         <div class="portrait-box">
           <img src="./img/portrait-nikola.png" class="profile-portrait" alt="A portrait photo of Nikola">
         </div>
         <div class="intro-box">
-          <h1>Hello</h1>
-          <p>I am Nikola Stefanovski</p>
-          <p>I am learning to become a &lt;web&gt; developer.</p>
+          <h1>Hello!</h1>
+          <p>I am Nikola Stefanovski, a web developer based in Germany.</p>
+          <p>Welcome to my portfolio!</p>
+          <!-- <p>I am learning to become a &lt;web&gt; developer.</p> -->
           <a href="work.html" id="look-work" target="_blank">Have a look at my work!</a>
         </div>
       </div>
-    </main>
-    <footer class="page-footer" id="main-page_footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a href="https://github.com/S-Nikola" target="_blank">
-          <img class="social-media_icon" src="./img/git-hub_icon.svg" alt="GitHub Logo leading to my personal profile">
-        </a>
-        <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
-          <img class="social-media_icon" src="img/letter-a.png" alt="academia.edu">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-          <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
-        </a>
+      <div class="page-footer" id="main-page_footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a href="https://github.com/S-Nikola" target="_blank">
+            <img class="social-media_icon" src="./img/git-hub_icon.svg" alt="GitHub Logo leading to my personal profile">
+          </a>
+          <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
+            <img class="social-media_icon" src="img/letter-a.png" alt="academia.edu">
+          </a>
+          <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
+            <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
+          </a>
+        </div>
       </div>
-      <p>under construction...</p>
-    </footer>
+    </section>
+    <section class="about-page" id="about-page">
+      <h1 id="about-heading">About me</h1>
+      <div class="about-div">
+        <div id="personal-info">
+          <div class="about-paragraph">
+            <p>
+              A Full-Stack Web Developer with a background in social sciences and academic research. Skilled in
+              HTML, CSS, JavaScript and React. A curious mind and a quick learner willing to research new
+              technologies and put newfound knowledge into projects. Eager to grow as a web developer and
+              create interactive, modern websites that provide a smooth experience.
+            </p> 
+            <a href="files/Nikola_CV.pdf" class="prompts" download target="_blank">Download my CV</a>
+          </div>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p>
+              If you would like to work with me, or you are interested in more details about my projects, do not hesitate to contact me!
+              I am always looking forward to interesting projects and collaborations.
+            </p>
+            <div class="contact-prompts">
+              <a class="prompts" href="skype:live:nikola.a.stefanovski" target="_blank">Skype</a>
+              <a class="prompts" href="mailto:nikoding32@gmail.com" target="_blank">Email</a>
+              <a class="prompts" href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">LinkedIn</a>
+            </div>
+            
+          </div>
+        </div>
+          <div id="skills">
+              <div class="skills-list" id="frontend">
+                <h4>Frontend:</h4>
+                <ul>
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Bootstrap</li>
+                  <li>React-Native</li>
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>Material</li>
+                </ul>
+              </div>
+              <div class="skills-list" id="backend">
+                <h4>Backend:</h4>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Rest API</li>
+                  <li>Firebase</li>
+                  <li>AWS</li>
+                  <li>Postman</li>
+                </ul>
+              </div>
+            <div class="skills-list" id="additional-skills">
+              <h4>Additional-skills:</h4>
+              <p>Functional and object-oriented development, Test Driven Development, Responsive design, GitHub version control,
+                Working in an Agile environment.
+              </p>
+            </div>
+          </div>
+
+        
+      </div>
+    </section>
+    <section class="work-page" id="work-page">
+      <h1 id="work-heading" >Have a look at some of my work</h1>
+        <div class="project_grid">
+          <div class="project">
+            <h2 class="project_title">BananaFlix-React-client</h2>
+            <img class="project_img" src="./img/react-overview.jpg" alt="BananaFlix screenshot">
+            <p class="project_description">
+              The client side of a movie browsing app, made with React-Bootsrap.
+              The application is a single-page application, uses state routing to navigate between views and share URLs.
+              It uses Parcel as its build tool and is hosted on Netlify.
+            </p>
+            <div class="project-buttons">
+              <a href="https://banana-flix.netlify.app/" target="_blank">Live Demo</a>
+              <a href="https://github.com/S-Nikola/BananaFlix-client" target="_blank">GitHub</a>
+              <a href="case-study.html">Case study</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">BananaFlix-Angular-client</h2>
+            <img class="project_img" src="./img/angular-overview.jpg" alt="BananaFlix screenshot">
+            <p class="project_description">
+              The client side of a movie browsing app, made with Angular and designed with Angular-Material.
+              It allows users to register, log in and browse through movies. 
+              They can add movies to their list of favorites and they can view their profile details and edit them as they wish. 
+            </p>
+            <div class="project-buttons">
+              <a href="https://s-nikola.github.io/BananaFlix-Angular-client/welcome" target="_blank">Live Demo</a>
+              <a href="https://github.com/S-Nikola/BananaFlix-Angular-client" target="_blank">GitHub</a>
+              <a href="case-study.html">Case study</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">BananaFlix-backend</h2>
+            <img class="project_img" src="./img/movie_api.jpg" alt="MongoDB screenshot">
+            <p class="project_description">
+              The backend for the movie browsing app: BananaFlix. Built with Node.js and MongoDB.
+              The API is a Node.js and Express application. It uses REST architecture. The business logic is modeled with Mongoose.
+              It includes user authentication and authorization code, data validation logic, meets data security regulations.
+              The API is deployed to Render.com.
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/S-Nikola/movie_api" target="_blank">See project on GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">PokedexApp</h2>
+            <img class="project_img" src="./img/pokedex.jpg" alt="Pokedex App screenshot">
+            <p class="project_description">
+              An app, for browsing Pokemon made with JavaScript, HTML and CSS.
+              The users are able to view a list of data and see more details for a given data item on demand.
+              The data is drawn from a public API
+            </p>
+            <div class="project-buttons">
+              <a href="https://s-nikola.github.io/Pokedex_simple-JS-app/" target="_blank">Live Demo</a>
+              <a href="https://github.com/S-Nikola/Pokedex_simple-JS-app" target="_blank">GitHub</a>
+            </div>
+          </div>          
+          <div class="project">
+            <h2 class="project_title">Meet App</h2>
+            <img class="project_img" src="./img/meet_app.jpg" alt="Meet App screenshot">
+            <p class="project_description">
+              Meet App is a progressive web app that lets you search for tech events in your city.
+              You can see how many events are happening in a particular city and time-frame,
+              the details of those events, and what types of events are most common in an area.
+              It's connected to Google Calendar for demonstration purposes, so the events aren't up-to-date.
+            </p>
+            <div class="project-buttons">
+              <a href="https://s-nikola.github.io/meet/" target="_blank">Live Demo</a>
+              <a href="https://github.com/S-Nikola/meet" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">Portfolio</h2>
+            <img class="project_img" src="./img/portfolio.jpg" alt="Portfolio screenshot">
+            <p class="project_description">
+              The portfolio website you are browsing at the moment. Built with HTML and CSS, as part of the curriculum at CareerFoundry.
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/S-Nikola/CF-Portfolio-website">GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">Book promotion website</h2>
+            <img class="project_img" src="./img/bootstrap_book.jpg" alt="Bootstrap book promotion website screenshot">
+            <p class="project_description">
+              A website created using Bootstrap, where a book is promoted and offered for purchase.
+              It was created following an online tutorial by NetNinja. It is still a work in progress.
+            </p>
+            <div class="project-buttons">
+              <a href="https://s-nikola.github.io/RoW-Book_NS_bootstrap/" target="_blank">Live Demo</a>
+              <a href="https://github.com/S-Nikola/RoW-Book_NS_bootstrap" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project_title">BananaFlix-React-client</h2>
+            <video controls
+            >
+              <source src="./img/ChatMeApp_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <p class="project_description">
+              A Chat App for mobile devices using React Native. The app provides users with an interface and options to chat, 
+              share images and their location. It was built with React-Native and Expo, and the data is stored with Firebase.
+            </p>
+            <div class="project-buttons">
+              <a href="https://github.com/S-Nikola/ChatMeApp" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="contact-footer">
+    <p>Find me on</p>
+  <div class="social-media">
+    <a href="https://github.com/S-Nikola" target="_blank">
+      <img class="social-media_icon" src="./img/git-hub_icon.svg" alt="GitHub Logo leading to my personal profile">
+    </a>
+    <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
+      <img class="social-media_icon" src="img/letter-a.png" alt="academia.edu">
+    </a>
+    <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
+      <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
+    </a>
   </div>
+  </footer>
 </body>
-</html>
+<footer>
+
+</footer>
