@@ -9,6 +9,7 @@
      <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
      <link rel="stylesheet" type="text/css" href="./css/styles.css">
      <script src="./js/index.js"></script>
@@ -17,6 +18,11 @@
   <header class="page-header">
     <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
     <nav class="main-navigation page-header__item">
+    <nav class="main-navigation page-header__item" id="main-nav">
+      <!-- toggle button for mobile nav -->
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="#" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -39,6 +45,7 @@
       </div>
     </nav>
   </header>
+
   <main class="container">
     <section class="profile-page">
       <h1>Welcome to my portfolio</h1>
@@ -47,7 +54,7 @@
           <img src="./img/portrait-nikola.png" class="profile-portrait" alt="A portrait photo of Nikola">
         </div>
         <div class="intro-box">
-          <p>I am <b>Nikola Stefanovski</b>, a web developer with a background in social sciences, currently based in Germany.</p>
+          <p>I am <b id="myName">Nikola Stefanovski</b>, a web developer with a background in social sciences, currently based in Germany.</p>
           <p>Explore my portfolio to find out more about me.</p>
           <a href="#work-page" id="look-work">Have a look at my work!</a>
         </div>
@@ -124,7 +131,7 @@
                 </div>
               </div>
               <div class="skills-list" id="additional-skills">
-                <h4>Additional tools:</h4>
+                <h4>Additional:</h4>
                 <div class="tool-container">
                   <span>Jest</span>
                   <span>Cucumber</span>

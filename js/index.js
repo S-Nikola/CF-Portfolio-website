@@ -4,15 +4,28 @@ document.addEventListener('DOMContentLoaded', function() {
   function switchTheme(e) {
     var bodyBackground = document.body;
     var lookWork = document.getElementById("look-work");
+    var myName = document.getElementById("myName");
+
       if (e.target.checked) {
         bodyBackground.classList.toggle("light-mode");
         lookWork.classList.toggle("dark-link");
+        myName.classList.toggle("dark-name");
       }
       else {
         bodyBackground.classList.remove("light-mode");
         lookWork.classList.remove("dark-link");
+        myName.classList.remove("dark-name");
       }    
   }
 
   toggleSwitch.addEventListener('change', switchTheme, false);
+
+  // function myFunction() {
+  //   var x = document.getElementById("myLinks");
+  //   if (x.style.display === "block") {
+  //     x.style.display = "none";
+  //   } else {
+  //     x.style.display = "block";
+  //   }
+  // }
 });
