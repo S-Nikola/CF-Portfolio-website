@@ -9,7 +9,9 @@
      <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
      <link rel="stylesheet" type="text/css" href="./css/styles.css">
+     <script src="./js/index.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -20,22 +22,28 @@
           <a href="#" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
         </li>
         <li role="presentation" >
-          <a href="#about-page" role="menuitem" class="navigation-list__item">About Me</a>
+          <a href="#about-page" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
           <a href="#work-page" role="menuitem" class="navigation-list__item">Work</a>
         </li>
       </ul>
+      <div class="switch">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
     </nav>
   </header>
   <main class="container">
     <section class="profile-page">
+      <h1>Welcome to my portfolio</h1>
       <div class="profile" >
         <div class="portrait-box">
           <img src="./img/portrait-nikola.png" class="profile-portrait" alt="A portrait photo of Nikola">
         </div>
         <div class="intro-box">
-          <h1>Hello!</h1>
           <p>I am Nikola Stefanovski, a web developer based in Germany.</p>
           <p>Welcome to my portfolio!</p>
           <a href="#work-page" id="look-work">Have a look at my work!</a>
@@ -66,7 +74,7 @@
               HTML, CSS, JavaScript and React. A curious mind and a quick learner willing to research new
               technologies and put newfound knowledge into projects. Eager to grow as a web developer and
               create interactive, modern websites that provide a smooth experience.
-            </p> 
+            </p>
             <a href="files/Nikola_CV.pdf" class="prompts" download target="_blank">Download my CV</a>
           </div>
           <div class="contact-info">
@@ -84,41 +92,50 @@
           </div>
         </div>
           <div id="skills">
+            <h3>Skills & Tools</h3>
+            <div id="skills-wrap">
               <div class="skills-list" id="frontend">
                 <h4>Frontend:</h4>
-                <ul>
-                  <li>Html</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Bootstrap</li>
-                  <li>React-Native</li>
-                  <li>Angular</li>
-                  <li>TypeScript</li>
-                  <li>Material</li>
-                </ul>
+                <div class="tool-container">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                  <span>React</span>
+                  <span>Parcel</span>
+                  <span>TypeScript</span>
+                  <span>Angular</span>
+                  <span>Material</span>
+                  <span>React-Native</span>
+                  <span>Expo</span>
+                </div>
               </div>
               <div class="skills-list" id="backend">
                 <h4>Backend:</h4>
-                <ul>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>Rest API</li>
-                  <li>Firebase</li>
-                  <li>AWS</li>
-                  <li>Postman</li>
-                </ul>
+                <div class="tool-container">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>REST API</span>
+                  <span>Firebase</span>
+                  <span>AWS</span>
+                  <span>Postman</span>
+                </div>
               </div>
-            <div class="skills-list" id="additional-skills">
-              <h4>Additional-skills:</h4>
-              <p>Functional and object-oriented development, Test Driven Development, Responsive design, GitHub version control,
-                Working in an Agile environment.
-              </p>
+              <div class="skills-list" id="additional-skills">
+                <h4>Additional tools:</h4>
+                <div class="tool-container">
+                  <span>Jest</span>
+                  <span>Cucumber</span>
+                  <span>Puppeteer</span>
+                  <span>GitHub</span>
+                  <span>Agile</span>
+                  <span>JSDoc</span>
+                  <span>TypeDoc</span>
+                </div>
+              </div>
             </div>
           </div>
-
-        
       </div>
     </section>
     <section class="work-page" id="work-page">
@@ -156,10 +173,10 @@
             <h2 class="project_title">BananaFlix-backend</h2>
             <img class="project_img" src="./img/movie_api.jpg" alt="MongoDB screenshot">
             <p class="project_description">
-              The backend for the movie browsing app: BananaFlix. Built with Node.js and MongoDB.
-              The API is a Node.js and Express application. It uses REST architecture. The business logic is modeled with Mongoose.
-              It includes user authentication and authorization code, data validation logic, meets data security regulations.
-              The API is deployed to Render.com.
+              Built with Node.js, Express and MongoDB.
+              The API uses REST architecture and the business logic is modeled with Mongoose.
+              It includes user authentication and authorization code, data validation logic and meets data security regulations.
+              It is deployed to Render.com.
             </p>
             <div class="project-buttons">
               <a href="https://github.com/S-Nikola/movie_api" target="_blank">GitHub</a>
@@ -182,10 +199,9 @@
             <h2 class="project_title">Meet App</h2>
             <img class="project_img" src="./img/meet_app.jpg" alt="Meet App screenshot">
             <p class="project_description">
-              Meet App is a progressive web app that lets you search for tech events in your city.
-              You can see how many events are happening in a particular city and time-frame,
-              the details of those events, and what types of events are most common in an area.
-              It's connected to Google Calendar for demonstration purposes, so the events aren't up-to-date.
+              A PWA app, Built with React, following a Test Driven Development approach. 
+              It displays events, including a list and charts, with data from a Google Calendar.
+              AWS lambda functions were implemented for user authentication and authorization (OAuth).
             </p>
             <div class="project-buttons">
               <a href="https://s-nikola.github.io/meet/" target="_blank">Live Demo</a>
@@ -231,21 +247,18 @@
         </div>
     </section>
   </main>
-  <footer class="contact-footer">
-    <p>Find me on</p>
-  <div class="social-media">
-    <a href="https://github.com/S-Nikola" target="_blank">
-      <img class="social-media_icon" src="./img/git-hub_icon.svg" alt="GitHub Logo leading to my personal profile">
-    </a>
-    <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
-      <img class="social-media_icon" src="img/letter-a.png" alt="academia.edu">
-    </a>
-    <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
-      <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
-    </a>
-  </div>
+  <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/S-Nikola" target="_blank">
+          <img class="social-media_icon" src="./img/git-hub_icon.svg" alt="GitHub Logo leading to my personal profile">
+        </a>
+        <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
+          <img class="social-media_icon" src="img/letter-a.png" alt="academia.edu">
+        </a>
+        <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
+          <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+      </div>
   </footer>
 </body>
-<footer>
-
-</footer>
