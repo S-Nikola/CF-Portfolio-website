@@ -1,4 +1,4 @@
 # CF-Portfolio-website
 https://s-nikola.github.io/CF-Portfolio-website/
 
-![Screenshot 2022-10-20 231623](https://user-images.githubusercontent.com/114912398/197059975-12a41a0f-5f1a-48a6-87ce-63dc802b7ce8.jpg)
+![portfolio](https://user-images.githubusercontent.com/114912398/227260229-9e465169-e220-4555-b7ed-e1c0cf61524a.jpg)
