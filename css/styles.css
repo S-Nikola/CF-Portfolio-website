@@ -61,7 +61,7 @@ b{
   width: 100%;
   padding: 20px;
   position:sticky;
-  top: 1px;
+  top: 0px;
   background-color: var(--deep-blue);
 }
 .page-header__item {
