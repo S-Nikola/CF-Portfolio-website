@@ -47,6 +47,7 @@ a:hover, a:focus {
 a:hover, a:focus, .a:hover, .a:focus {
   cursor: pointer;
   opacity: 0.8;
+  padding: 3px;
 }
 b{
   color: var(--silver);
