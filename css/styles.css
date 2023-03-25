@@ -5,6 +5,8 @@
   --silver: #eaeaf1;
 }
 *{
+  /* padding: 0;
+  margin: 0; */
   box-sizing: border-box;
 }
 /*General styling begins*/
@@ -124,8 +126,9 @@ b{
   background-color: var(--deep-blue);
 }
 .page-header__item {
-  flex: 0 1 200px;
+  flex: 0 1 130px;
 }
+
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
@@ -137,6 +140,76 @@ b{
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.nav-item{
+  list-style: none;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu{
+  background-color: var(--deep-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  transition: 0.7s ease;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--creme);
+}
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .nav-menu{
+    justify-content: center;
+    padding: 10px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 16px 10px;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
 }
 /* .page-header #myLinks{
   display: none;
@@ -153,8 +226,8 @@ b{
   font-weight: bolder;
 } */
 #nikola_logo{
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
 }
 /* header styling end */
 
@@ -170,6 +243,7 @@ b{
 }
 .profile-page h1{
   text-align: center;
+  margin-top: 30px;
 }
 .profile {
   max-width: 925px;
@@ -186,7 +260,7 @@ b{
 }
 .profile-portrait{
   /* float: left; */
-  width: 50vmin;
+  width: 42vmin;
   margin-right: 40px;
   border-radius: 50%;
 }
@@ -270,6 +344,11 @@ b{
   text-align: center;
   margin: 0;
   font-size: 32px;
+}
+@media(max-width:768px){
+  .about-page h1 {
+    margin-top: 165px;
+  }
 }
 .about-page a:hover {
   padding: 10px;

@@ -17,6 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
         myName.classList.remove("dark-name");
       }    
   }
-
   toggleSwitch.addEventListener('change', switchTheme, false);
+
+//   const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".nav-menu");
+
+// hamburger.addEventListener("click", function() {
+//   hamburger.classList.toggle("active");
+//   navMenu.classList.toggle("active");
+// });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  }
+});
+
+
+
+
+
+
