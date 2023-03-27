@@ -5,8 +5,6 @@
   --silver: #eaeaf1;
 }
 *{
-  /* padding: 0;
-  margin: 0; */
   box-sizing: border-box;
   font-family: 'Philosopher', sans-serif; 
 }
@@ -16,12 +14,11 @@ body{
   color: var(--creme);
   font-family: 'Philosopher', sans-serif; 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   text-align: left;
   height: 100%;
 }
-
 
 a {
   color: var(--creme);
@@ -35,15 +32,6 @@ a:hover, a:focus {
   transition: 0.2s opacity;
 }
 
-/* @media all and (max-width: 1300px) {
-  a:hover, a:focus {
-    padding: 0;
-  }
-} */
-/* a:active{
-  text-decoration: underline;
-  color: var(--creme);
-} */
 a:hover, a:focus, .a:hover, .a:focus {
   cursor: pointer;
   opacity: 0.8;
@@ -181,7 +169,6 @@ b{
   text-align: center;
 }
 .intro-box p {
-  font-size: 20px;
   margin: 5px;
 }
 .profile-portrait{
@@ -474,7 +461,6 @@ text-align: center;
 }
 .project_description{
   height: 45%;
-  font-size: 2vmin;
   padding: 10px;
 }
 
@@ -486,7 +472,6 @@ text-align: center;
 @media(max-width:768px){
   .project_description{
     height: 50%;
-    font-size: 3.5vmin;
   }
   .project-buttons{
     font-size: 3vmin;
@@ -814,7 +799,7 @@ figure{
 @media all and (max-width: 900px) {
   #contact-page {
     margin: 100px auto 100px;
-    padding: 50px;
+    padding: 15px;
   }
 }
 #impressum-link{
