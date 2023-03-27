@@ -8,37 +8,51 @@
      <link rel="icon" href="./img/favicon-32x32.png" sizes="32x32">
      <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&family=Philosopher&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
      <link rel="stylesheet" type="text/css" href="./css/styles.css">
      <script src="./js/index.js"></script>
 </head>
-<body>
+<body id="body">
   <header class="page-header">
-    <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="#" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation" >
-          <a href="#about-page" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="#work-page" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="#contact-page" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-      <div class="switch">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-    </div>
+    <nav class="navbar page-header__item" id="main-nav">
+      <img 
+      class="page-header__item" 
+      src="./img/nikola_logo.png" 
+      id="nikola_logo"
+      alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase"
+      >
+      <div class="navbar-right">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#body" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-page" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work-page" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-page" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="switch">
+          <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main class="container">
     <section class="profile-page">
       <h1>Welcome to my portfolio</h1>
@@ -47,13 +61,13 @@
           <img src="./img/portrait-nikola.png" class="profile-portrait" alt="A portrait photo of Nikola">
         </div>
         <div class="intro-box">
-          <p>I am <b>Nikola Stefanovski</b>, a web developer with a background in social sciences, currently based in Germany.</p>
+          <p>I am <b id="myName">Nikola Stefanovski</b>, a web developer with a background in social sciences, currently based in Germany.</p>
           <p>Explore my portfolio to find out more about me.</p>
-          <a href="#work-page" id="look-work">Have a look at my work!</a>
+          <a href="#work-page" class="link">Have a look at my work!</a>
         </div>
       </div>
       <div class="page-footer" id="main-page_footer">
-        <p>Find out more about me</p>
+        <p>Find me on</p>
         <div class="social-media">
           <a href="https://github.com/S-Nikola" target="_blank">
             <img class="social-media_icon" src="./img/github-color-svgrepo-com.svg" alt="GitHub Logo leading to my personal profile">
@@ -61,7 +75,7 @@
           <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
             <img class="social-media_icon" src="img/academia-svgrepo-com.svg" alt="academia.edu">
           </a>
-          <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
+          <a href="https://www.linkedin.com/in/nikola-stefanovski" target="_blank">
             <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
           </a>
         </div>
@@ -71,19 +85,19 @@
       <h1 id="about-heading">About me</h1>
       <div class="about-div">
         <div id="personal-info">
-          <div class="about-paragraph">
-            <p> <b></b>
-              A Full-Stack Web Developer with a background in social sciences and academic research. Skilled in
+          <div class="text-box" id="about-paragraph">
+            <p>
+              A Full-Stack Web Developer with a background in social sciences. Skilled in
               <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>React</b>. A curious mind and a quick learner willing to research new
               technologies and put newfound knowledge into projects. Eager to grow as a web developer and
               create interactive, modern websites that provide a smooth experience.
             </p>
             <a href="files/Nikola_CV.pdf" class="prompts" download target="_blank">Download my CV</a>
           </div>
-          <div class="additional-info">
+          <div class="text-box" id="additional-info">
             <p>
               Due to my background in archaeology, I have ample experience in <b>academic
-              research</b>, specializing in social sciences. Other than producing extensive works of compiled
+              research</b>. Other than producing extensive works of compiled
               knowledge and databases regarding archaeological findings, I am also experienced in
               conference/workshop <b>organization</b> and working in <b>collaborative projects</b>. I combine these crucial
               soft-skills with my newly acquired knowledge of web development technologies, and am ready to
@@ -92,47 +106,47 @@
             </p>
           </div>
         </div>
-          <div id="skills">
+          <div class="text-box" id="skills">
             <h3>Skills & Tools</h3>
             <div id="skills-wrap">
               <div class="skills-list" id="frontend">
                 <h4>Frontend:</h4>
                 <div class="tool-container">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>Bootstrap</span>
-                  <span>React</span>
-                  <span>Parcel</span>
-                  <span>TypeScript</span>
-                  <span>Angular</span>
-                  <span>Material</span>
-                  <span>React-Native</span>
-                  <span>Expo</span>
+                  <span class="tool">HTML</span>
+                  <span class="tool">CSS</span>
+                  <span class="tool">JavaScript</span>
+                  <span class="tool">Bootstrap</span>
+                  <span class="tool">React</span>
+                  <span class="tool">Parcel</span>
+                  <span class="tool">TypeScript</span>
+                  <span class="tool">Angular</span>
+                  <span class="tool">Material</span>
+                  <span class="tool">React-Native</span>
+                  <span class="tool">Expo</span>
                 </div>
               </div>
               <div class="skills-list" id="backend">
                 <h4>Backend:</h4>
                 <div class="tool-container">
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>MongoDB</span>
-                  <span>REST API</span>
-                  <span>Firebase</span>
-                  <span>AWS</span>
-                  <span>Postman</span>
+                  <span class="tool">Node.js</span>
+                  <span class="tool">Express</span>
+                  <span class="tool">MongoDB</span>
+                  <span class="tool">REST API</span>
+                  <span class="tool">Firebase</span>
+                  <span class="tool">AWS</span>
+                  <span class="tool">Postman</span>
                 </div>
               </div>
               <div class="skills-list" id="additional-skills">
-                <h4>Additional tools:</h4>
+                <h4>Additional:</h4>
                 <div class="tool-container">
-                  <span>Jest</span>
-                  <span>Cucumber</span>
-                  <span>Puppeteer</span>
-                  <span>GitHub</span>
-                  <span>Agile</span>
-                  <span>JSDoc</span>
-                  <span>TypeDoc</span>
+                  <span class="tool">Jest</span>
+                  <span class="tool">Cucumber</span>
+                  <span class="tool">Puppeteer</span>
+                  <span class="tool">GitHub</span>
+                  <span class="tool">Agile</span>
+                  <span class="tool">JSDoc</span>
+                  <span class="tool">TypeDoc</span>
                 </div>
               </div>
             </div>
@@ -146,7 +160,7 @@
             <h2 class="project_title">BananaFlix-React-client</h2>
             <img class="project_img" src="./img/react-overview.jpg" alt="BananaFlix screenshot">
             <p class="project_description">
-              The client side of a movie browsing app, made with React-Bootsrap.
+              The client side of a movie browsing app, made with React-Bootstrap.
               The application is a single-page application, uses state routing to navigate between views and share URLs.
               It uses Parcel as its build tool and is hosted on Netlify.
             </p>
@@ -162,7 +176,7 @@
             <p class="project_description">
               The client side of a movie browsing app, made with Angular and designed with Angular-Material.
               It allows users to register, log in and browse through movies. 
-              They can add movies to their list of favorites and they can view their profile details and edit them as they wish. 
+              They can add movies to their list of favourites and they can view their profile details and edit them as they wish. 
             </p>
             <div class="project-buttons">
               <a href="https://s-nikola.github.io/BananaFlix-Angular-client/welcome" target="_blank">Live Demo</a>
@@ -175,7 +189,7 @@
             <img class="project_img" src="./img/movie_api.jpg" alt="MongoDB screenshot">
             <p class="project_description">
               Built with Node.js, Express and MongoDB.
-              The API uses REST architecture and the business logic is modeled with Mongoose.
+              The API uses REST architecture and the business logic is modelled with Mongoose.
               It includes user authentication and authorization code, data validation logic and meets data security regulations.
               It is deployed to Render.com.
             </p>
@@ -189,7 +203,7 @@
             <p class="project_description">
               An app, for browsing Pokemon made with JavaScript, HTML and CSS.
               The users are able to view a list of data and see more details for a given data item on demand.
-              The data is drawn from a public API
+              The data is drawn from a public API.
             </p>
             <div class="project-buttons">
               <a href="https://s-nikola.github.io/Pokedex_simple-JS-app/" target="_blank">Live Demo</a>
@@ -213,7 +227,8 @@
             <h2 class="project_title">Portfolio</h2>
             <img class="project_img" src="./img/portfolio.jpg" alt="Portfolio screenshot">
             <p class="project_description">
-              The portfolio website you are browsing at the moment. Built with HTML and CSS, as part of the curriculum at CareerFoundry.
+              The portfolio website you are browsing at the moment. Built with HTML, CSS and JavaScript 
+              as part of the curriculum at CareerFoundry.
             </p>
             <div class="project-buttons">
               <a href="https://github.com/S-Nikola/CF-Portfolio-website">GitHub</a>
@@ -248,7 +263,7 @@
         </div>
     </section>
     <section id="contact-page">
-      <div class="contact-info">
+      <div class="text-box" id="contact-info">
         <h3>Contact</h3>
         <p>
           If you would like to work with me, or you are interested in more details about my projects, do not hesitate to contact me!
@@ -264,13 +279,15 @@
           <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
             <img class="social-media_icon" src="img/academia-svgrepo-com.svg" alt="academia.edu">
           </a>
-          <a href="https://www.linkedin.com/in/nikola-stefanovski-25727a26b/" target="_blank">
+          <a href="https://www.linkedin.com/in/nikola-stefanovski" target="_blank">
             <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
           </a>
         </div>
+      </div>  
     </section>
   </main>
   <footer class="page-footer">
+    <a id="impressum-link" class="link" href="impressum.html">Impressum</a>
     <p>Copyright &copy; Nikola Stefanovski 2022</p>
   </footer>
 </body>

@@ -9,27 +9,47 @@
     <link rel="icon" href="./img/favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/index.js"></script>
  </head>
 <body>
   <div class="container">
-    <header class="page-header" id="work-footer">
-      <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="index.html#about-page" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li role="presentation">
-            <a href="index.html#work-page" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="index.html#contact-page" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
+    <header class="page-header">
+      <nav class="navbar page-header__item" id="main-nav">
+        <img 
+        class="page-header__item" 
+        src="./img/nikola_logo.png" 
+        id="nikola_logo"
+        alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase"
+        >
+        <div class="navbar-right">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about-page" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#work-page" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact-page" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="switch">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -40,7 +60,7 @@
               <h3>Overview</h3>
               <p>
                 BananaFlix is the client side of a movie browsing app that allows users to register,
-                log in and browse through movies. They can add movies to their list of favorites 
+                log in and browse through movies. They can add movies to their list of favourites 
                 and they can view them and their profile details in the ProfileView, where they can also edit user details. 
               </p>
               <br>
@@ -61,7 +81,7 @@
               <ul>
                 <li>
                   <h4>Backend:</h4>
-                  NodeJS (Express, Morgan, bodyParser, mongoose, CORS,
+                  NodeJS (Express, Morgan, BodyParser, mongoose, CORS,
                   Passport), MongoDB, Postman, Render, JSDoc.
                 </li>
                 <li>
@@ -113,10 +133,10 @@
               </p>
               <ul>
                 <li>A registration view where new users can sign up</li>
-                <li>A login view where they can input a username and password to log in</li>
-                <li>A main view that shows a list of all movies</li>
-                <li>A movie view that shows information about a single movie and allows users to add the movie to their list of favorites</li>
-                <li>A profile view where users can update their user information and list of favorites</li>
+                <li>A LoginView where they can input a username and password to log in</li>
+                <li>A MainView that shows a list of all movies</li>
+                <li>A MovieView that shows information about a single movie and allows users to add the movie to their list of favorites</li>
+                <li>A ProfileView where users can update their user information and list of favorites</li>
               </ul>
               <p>
                 The other is made with Angular and has a set of different features, 
@@ -142,7 +162,7 @@
               there is one difference between the two clients. The React client is accompanied by advanced form authentication 
               while the Angular is not. This is simply because the creation of both clients was done with different goals in mind. 
               The React project was where advanced JavaScript functions and state management, 
-              as well as prop passing between views, were prioritzed. The purpose of the Angular project was to familiarize myself with 
+              as well as prop passing between views, were prioritized. The purpose of the Angular project was to familiarize myself with 
               the framework, learn the basics of TypeScript and employ more advanced forms of documentation.
               Therefore, the Angular client has both a simpler look and a somewhat reduced functionality. 
             </p>
@@ -168,13 +188,13 @@
             <h2 id="challenges" >--- Challenges ---</h2>
             <p>
               This as my first full-stack project and it provided me with ample experiences when dealing with problems during development.
-              And there were many problems. For starters, managing the states without using Redux or Context API in the React client was very dificult.
+              And there were many problems. For starters, managing the states without using Redux or Context API in the React client was very difficult.
               While I do intend to implement those solutions at a later stage, the fact I was forced to find a solution with the available tools, 
               put me in a situation to have to learn more advanced ways of dealing with my code and increase my knowledge of JavaScript.
-              In addition, managing the backend as well, gave me an oppurtunity to better understand the functionality of my websites.
-              Out of the two frameworks, React was easier to understand, while it became clear that Angular is a powerfull tool, when one has the time 
+              In addition, managing the backend as well, gave me an opportunity to better understand the functionality of my websites.
+              Out of the two frameworks, React was easier to understand, while it became clear that Angular is a powerful tool, when one has the time 
               to comprehend it well.
-              This project also increased my knowledge of the use of the terminal, as well as version control, which was very neccessary,
+              This project also increased my knowledge of the use of the terminal, as well as version control, which was very necessary,
               due to many setbacks and experimentations.
             </p>
       
@@ -185,11 +205,11 @@
               <li>Mentor: Ramadhan Aheebwa</li>
             </ul>
             <div class="project-links">
+              <a href="https://github.com/S-Nikola/movie_api" target="_blank">Code for the backend</a>
               <a href="https://github.com/S-Nikola/BananaFlix-client" target="_blank">Code for the React client</a>
               <a href="https://github.com/S-Nikola/BananaFlix-Angular-client" target="_blank">Code for the Angular client</a>
               <a href="https://banana-flix.netlify.app/login" target="_blank">Demo for the React client</a>
               <a href="https://s-nikola.github.io/BananaFlix-Angular-client/welcome" target="_blank">Demo for the Angular client</a>
-              <a href="https://github.com/S-Nikola/movie_api" target="_blank">Code for the backend</a>
             </div>
       </div>
     </main>  
@@ -205,7 +225,7 @@
         <a href="https://eth-mpg.academia.edu/NikolaStefanovski" target="_blank">
           <img class="social-media_icon" src="img/academia-svgrepo-com.svg" alt="academia.edu">
         </a>
-        <a href="https://www.linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/nikola-stefanovski" target="_blank">
           <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
       </div>
