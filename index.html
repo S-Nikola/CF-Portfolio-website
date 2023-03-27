@@ -14,14 +14,19 @@
      <link rel="stylesheet" type="text/css" href="./css/styles.css">
      <script src="./js/index.js"></script>
 </head>
-<body>
+<body id="body">
   <header class="page-header">
     <nav class="navbar page-header__item" id="main-nav">
-      <img class="page-header__item" src="./img/nikola_logo.png" id="nikola_logo" alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase">
+      <img 
+      class="page-header__item" 
+      src="./img/nikola_logo.png" 
+      id="nikola_logo"
+      alt="Personal logo of Nikola Stefanovski, consisted of the initials in uppercase"
+      >
       <div class="navbar-right">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#body" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="#about-page" class="nav-link">About</a>
@@ -58,7 +63,7 @@
         <div class="intro-box">
           <p>I am <b id="myName">Nikola Stefanovski</b>, a web developer with a background in social sciences, currently based in Germany.</p>
           <p>Explore my portfolio to find out more about me.</p>
-          <a href="#work-page" id="look-work">Have a look at my work!</a>
+          <a href="#work-page" class="link">Have a look at my work!</a>
         </div>
       </div>
       <div class="page-footer" id="main-page_footer">
@@ -278,9 +283,11 @@
             <img class="social-media_icon" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn">
           </a>
         </div>
+      </div>  
     </section>
   </main>
   <footer class="page-footer">
+    <a id="impressum-link" class="link" href="impressum.html">Impressum</a>
     <p>Copyright &copy; Nikola Stefanovski 2022</p>
   </footer>
 </body>

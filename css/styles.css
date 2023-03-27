@@ -190,10 +190,11 @@ b{
   margin-right: 40px;
   border-radius: 50%;
 }
+
 .intro-box{
   align-self: center;
 }
-#look-work{
+.link{
   color: var(--silver);
   font-weight: bold;
   margin-left: 5px;
@@ -208,6 +209,11 @@ b{
   }
   .profile-portrait{
     margin: 0;
+  }
+}
+@media(max-width:426px){
+  .profile-portrait{
+    width: 65vmin;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -261,17 +267,10 @@ b{
   justify-content: center;
   min-height: 75vh;
   padding:170px 100px 0px;
-  font-size: 2.5vmin;
-}
-@media(max-width:768px){
-  .about-page {
-    font-size: 3.5vmin;
-  }
 }
 .about-page h1 {
   text-align: center;
   margin: 0;
-  font-size: 32px;
 }
 @media(max-width:768px){
   .about-page h1 {
@@ -370,7 +369,11 @@ b{
   box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
   margin: 10px;
 }
-
+@media(max-width:768px){
+  #skills {
+    font-size: 3.5vmin;
+  }
+}
 #skills-wrap{
   display: flex;
   flex-direction: column;
@@ -467,7 +470,7 @@ text-align: center;
 }
 
 .project_title{
-  font-size: 2.5vmin;
+  /* font-size: 2.5vmin; */
 }
 .project_description{
   height: 45%;
@@ -543,9 +546,6 @@ text-align: center;
   .project:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  .project_grid h1 {
-    font-size: 22px;
   }
 }
 /*Work page styling ends*/
@@ -817,10 +817,62 @@ figure{
     padding: 50px;
   }
 }
-/*Contact-page styling ends*/
+#impressum-link{
+  color: var(--creme);
+  font-weight: bold;
+}
+#impressum-link:hover{
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.6;
+}
 footer p {
   font-weight: bold;
 }
+/*Contact-page styling ends*/
+/*Impressum-page styling begins*/
+#impressum-page {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 0 100px;
+}
+
+#impressum{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--deep-blue);
+  color: var(--creme);
+  border-radius: 15px;
+  width: 30rem;
+  min-height: auto;
+  box-shadow: 0 0 20px 0 rgba(168, 165, 199, 0.2), 0 5px 5px 0 rgba(238, 203, 150, 0.24);
+  margin: 10px;
+  text-align: center;
+}
+#impressum p{
+  margin-top: 0;
+}
+#law-link{
+  color: var(--creme);
+  font-weight: bold;
+}
+#law-link:hover{
+  background-color: transparent;
+  padding: 0;
+  opacity: 0.6;
+}
+#impressum h3{
+  align-self: center;
+}
+@media all and (max-width: 900px) {
+  #impressum {
+    margin: 100px auto 100px;
+    padding: 50px;
+  }
+}
+/*Impressum-page styling ends*/
 
 /*Light-Dark Mode*/
 .light-mode {
